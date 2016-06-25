@@ -96,12 +96,13 @@ $("#nameset").click(function() {
     $("#ffield").html(fName+" - Circle");
     $("#sfield").html(sName+" - Cross");
     $("#resetBtn").css({"display":"inline-block"});
+    $(".box").css({"pointerEvents":"auto"});
 });
 
 $("#startGame").click(function() {
      $(".box > .circle").css({"display":"none"});
      $(".box > .cross").css({"display":"none"});
-     $(".box").css({"pointerEvents":"auto"});
+     
     console.log("new game click");
 });
 
