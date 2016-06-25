@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic TAc Toe</title>
+    <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/index.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-inverse" style="margin-bottom:10px;">
+      <p>TIC TAC TOE</p>
+  </nav>
+   <div class="container" id="selection">
+         <div class="col-md-4 col-xs-4 box-1">
+               <div class="circle" id="selCircle"></div>
+               
+           </div>
+            <div class="col-md-4 col-xs-4 col-md-offset-4 col-xs-offset-4 box-1">
+              <div class="cross" id="selCross"></div>
+           </div>
+   </div>
+   <div id="content">
+       <span id="ffield" class="label label-success">First Player - Circle</span>
+       <span id="sfield" class="label label-danger">Second Player - Cross</span>
+   </div>
+    <div class="container">
+        <div id="stadium">
+           <div class="col-md-4 col-xs-4 box" id="cell-1" onclick="clickCell1()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-2" onclick="clickCell2()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-3" onclick="clickCell3()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-4" onclick="clickCell4()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-5" onclick="clickCell5()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-6" onclick="clickCell6()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-7" onclick="clickCell7()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-8" onclick="clickCell8()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+           <div class="col-md-4 col-xs-4 box" id="cell-9" onclick="clickCell9()">
+               <div class="circle"></div>
+               <div class="cross"></div>
+           </div>
+            
+        </div>
+    </div>
+    <div id="start">
+    <button id="startGame" type="button" class="btn btn-md btn-success" data-toggle="modal" data-target="#startName">New Game</button>
+    <button id="resetBtn" type="button" class="btn btn-md btn-danger">Rematch</button>
+    </div>
+<!-- Model Alert Box -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="startName">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title bold">Enter First Player Name</h4>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" type="text" id="fpname" placeholder="First Player">
+          </div>
+          <div class="modal-header">
+            
+            <h4 class="modal-title bold">Enter Second Player Name</h4>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" type="text" id="spname" placeholder="Second Player">
+          </div>
+          <div class="modal-footer">
+            
+            <button id="nameset" type="button" class="btn btn-danger" data-dismiss="modal">Save and Play</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <footer>
+        <p>By <a href="http://git.maxyspark.com">MaxySpark</a></p>
+    </footer>
+<!--    All Scripts Goes Here-->
+    
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="boot/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/app.js"></script>
+</body>
+</html>

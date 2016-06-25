@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: burlywood;
+}
+nav {
+    height: 70px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+    color: aliceblue;
+    padding-top: 15px;
+    font-weight: bold;
+}
+#stadium {
+    margin: 0 auto;
+    width: 320px;
+    height: 320px;
+    padding: 0;
+    border:10px solid gray;
+    border-radius: 10px;
+}
+.box {
+    padding: 0;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    
+}
+.circle{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border: 20px solid white;
+    border-radius: 50%;
+    display: none;
+    
+}
+.cross {
+  background: white;
+  height: 96px;
+  position: relative;
+  width: 30px;
+    margin-left: 33px;
+    border-radius: 5px;
+    display: none;
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+}
+.cross:after {
+  background: white;
+  content: "";
+  height: 30px;
+  left: -33px;
+  position: absolute;
+  top: 33px;
+  width: 96px;
+    border-radius: 5px;
+}
+#selection {
+    
+    margin: 0 auto;
+    width: 340px;
+}
+
+#selCircle {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    
+}
+#selCross {
+    margin: 0 auto;
+    display: block;
+    
+}
+#content {
+    margin: 5px auto;
+    text-align: center;
+    font-size: 2em;
+}
+#start {
+    margin: 5px auto;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+.box-1 {
+    padding: 0;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+}
+#resetBtn {
+    display: none;
+}
+footer {
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+}
