@@ -44,6 +44,11 @@ function clickCell9(){
     counter = 9;
 }
 
+function disabledClick() {
+    $(".box").css({"pointerEvents":"none"});
+}
+
+disabledClick();
 
 $(".box").click(function() {
 //for circle
@@ -55,7 +60,7 @@ $(".box").click(function() {
     console.log("score first player "+firstCount);
     
     $(this).css({"pointerEvents":"none"});
-	$(this).attr('onclick','');
+	//$(this).attr('onclick','');
     
     repeatFlag = false;
     }
@@ -67,7 +72,7 @@ $(".box").click(function() {
     console.log("score second player "+seconCount);
     
     $(this).css({"pointerEvents":"none"});
-	$(this).attr('onclick','');
+	//$(this).attr('onclick','');
     
     repeatFlag = true;
     }
@@ -96,7 +101,7 @@ $("#nameset").click(function() {
 $("#startGame").click(function() {
      $(".box > .circle").css({"display":"none"});
      $(".box > .cross").css({"display":"none"});
-   
+     $(".box").css({"pointerEvents":"auto"});
     console.log("new game click");
 });
 
