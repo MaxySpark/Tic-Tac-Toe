@@ -45,7 +45,7 @@ function clickCell9(){
 }
 
 function disabledClick() {
-    $(".box").css({"pointerEvents":"none"});
+    $("#stadium").css({"pointerEvents":"none"});
 }
 
 disabledClick();
@@ -56,11 +56,11 @@ $(".box").click(function() {
         
     $(this).children(".circle").css({"display":"block"});
     
-    firstCount += counter;
-    console.log("score first player "+firstCount);
+//    firstCount += counter;
+//    console.log("score first player "+firstCount);
     
     $(this).css({"pointerEvents":"none"});
-	//$(this).attr('onclick','');
+	
     
     repeatFlag = false;
     }
@@ -68,15 +68,16 @@ $(".box").click(function() {
     else {
     $(this).children(".cross").css({"display":"block"});
     
-    seconCount += counter;
-    console.log("score second player "+seconCount);
+//    seconCount += counter;
+//    console.log("score second player "+seconCount);
     
     $(this).css({"pointerEvents":"none"});
-	//$(this).attr('onclick','');
+
     
     repeatFlag = true;
     }
     
+    //console.log(repeatFlag);
 //    if(firstCount === 12 || firstCount === 13 || firstCount === 15 || firstCount === 22 || firstCount === 24 || firstCount === 25) {
 //        
 //        console.log("First Player Wins");
@@ -97,6 +98,7 @@ $("#nameset").click(function() {
     $("#sfield").html(sName+" - Cross");
     $("#resetBtn").css({"display":"inline-block"});
     $(".box").css({"pointerEvents":"auto"});
+    repeatFlag = true;
 });
 
 $("#startGame").click(function() {
@@ -109,5 +111,7 @@ $("#startGame").click(function() {
 $("#resetBtn").click(function() {
     $(".box > .circle").css({"display":"none"});
      $(".box > .cross").css({"display":"none"});
+    $(".box").css({"pointerEvents":"auto"});
+    repeatFlag = true;
     console.log("reset click");
 });
