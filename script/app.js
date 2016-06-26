@@ -6,43 +6,43 @@ var seconCount = 0;
 var fName = "First Player";
 var sName = "Second Player";
 console.log(fName);
-
-function clickCell1(){
-    counter = 1;
-}
-
-function clickCell2(){
-    counter = 2;
-}
-
-function clickCell3(){
-    counter = 3;
-    
-}
-
-function clickCell4(){
-    counter = 4;
-}
-
-function clickCell5(){
-    counter = 5;
-}
-
-function clickCell6(){
-    counter = 6;
-}
-
-function clickCell7(){
-    counter = 7;
-}
-
-function clickCell8(){
-    counter = 8;
-}
-
-function clickCell9(){
-    counter = 9;
-}
+//
+//function clickCell1(){
+//    counter = 1;
+//}
+//
+//function clickCell2(){
+//    counter = 2;
+//}
+//
+//function clickCell3(){
+//    counter = 3;
+//    
+//}
+//
+//function clickCell4(){
+//    counter = 4;
+//}
+//
+//function clickCell5(){
+//    counter = 5;
+//}
+//
+//function clickCell6(){
+//    counter = 6;
+//}
+//
+//function clickCell7(){
+//    counter = 7;
+//}
+//
+//function clickCell8(){
+//    counter = 8;
+//}
+//
+//function clickCell9(){
+//    counter = 9;
+//}
 
 function disabledClick() {
     $("#stadium").css({"pointerEvents":"none"});
@@ -90,8 +90,11 @@ $(".box").click(function() {
 $("#nameset").click(function() {
     fName = $("#fpname").val();
     sName = $("#spname").val();
-    if(fName==='' || sName===''){
+    if(fName===''){
         fName="First Player";
+        
+    }
+    if(sName==='') {
         sName="Second Player";
     }
     $("#ffield").html(fName+" - Circle");
